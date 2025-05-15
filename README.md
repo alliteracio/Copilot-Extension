@@ -11,7 +11,7 @@ A lightweight ASP.NET Core web service that acts as a proxy between GitHub Copil
 
 3. **Try it**
 
-   Start every Copilot msg with @szandicopilotextensionv1
+   Start every Copilot msg with @szandiCopilotExtensionv1
    
    Example: "@szandiCopilotExtensionv1 What are anonimus functions in C#?"
    
@@ -48,7 +48,6 @@ Initial scaffolding for a GitHub Copilot extension. This repository contains the
   Modify the var appName
   
   cd Copilot-Extension dotnet run
-  
 
   
   The service will start on the default ASP.NET Core port (e.g., `http://localhost:5000`).
@@ -66,8 +65,7 @@ Initial scaffolding for a GitHub Copilot extension. This repository contains the
 
 4. **Configure Your Client**
 
-   - Send requests to the service endpoints as described above.
-   - For the `POST /` endpoint, include your GitHub token in the `X-Github-Token` header and the Copilot chat payload in the request body.
+   Modify the `POST /` endpoint, keep your GitHub token in the `X-Github-Token` header and modify the Copilot chat payload in the request body.
 
 ## Requirements
 

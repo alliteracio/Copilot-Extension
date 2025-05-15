@@ -52,3 +52,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/Copilot-Extension/.vs/Copilot-Extension/copilot-chat/25c34f12/sessions
+/Copilot-Extension/.vs/Copilot-Extension/CopilotIndices/17.13.444.19527
+/Copilot-Extension/.vs/Copilot-Extension
+/Copilot-Extension/Copilot-Extension.csproj
+/Copilot-Extension/Copilot-Extension.csproj.user
+/Copilot-Extension/Copilot-Extension.http

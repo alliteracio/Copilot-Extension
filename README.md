@@ -6,12 +6,13 @@ A lightweight ASP.NET Core web service that acts as a proxy between GitHub Copil
 
 1. **Install the GitHub App**
 
-   To use this service, install the GitHub App on your account:  
+   To use this service, install the GitHub App on your account:
    [szandiCopilotExtensionv1 GitHub App](https://github.com/apps/szandicopilotextensionv1)
 
-2. **Try it**
+3. **Try it**
 
    Start every Copilot msg with @szandicopilotextensionv1
+   
    Example: "@szandiCopilotExtensionv1 What are anonimus functions in C#?"
    
 # Copilot-Extension
@@ -41,17 +42,27 @@ Initial scaffolding for a GitHub Copilot extension. This repository contains the
 3. **Clone and Run the Service**
    
   Clone and run:
+  
   git clone https://github.com/alliteracio/Copilot-Extension.git
+  
   Modify the var appName
+  
   cd Copilot-Extension dotnet run
   
+
+  
   The service will start on the default ASP.NET Core port (e.g., `http://localhost:5000`).
+
   
   Create a dev tunnel:
+  
   https://learn.microsoft.com/en-us/connectors/custom-connectors/port-tunneling
+
   
   Create a Github Apps (use the dev tunnels url and a predefined appName):
+  
   https://docs.github.com/en/apps/creating-github-app
+  
 
 4. **Configure Your Client**
 

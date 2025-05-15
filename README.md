@@ -39,33 +39,26 @@ Initial scaffolding for a GitHub Copilot extension. This repository contains the
   
 ## Create your own extension
 
-3. **Clone and Run the Service**
    
-  Clone and run:
+  - Clone it.
+    
+        git clone https://github.com/alliteracio/Copilot-Extension.git
   
-  git clone https://github.com/alliteracio/Copilot-Extension.git
+  - Modify the `var appName` variable. (It has to be unique.)
   
-  Modify the var appName
-  
-  cd Copilot-Extension dotnet run
+  - Modify the `POST /` endpoint, keep your GitHub token in the `X-Github-Token` header and modify the Copilot chat payload in the request body.
 
+  - Run. (The service will start on the default ASP.NET Core port (e.g., `http://localhost:5000`).)
+    
+        cd Copilot-Extension dotnet run
   
-  The service will start on the default ASP.NET Core port (e.g., `http://localhost:5000`).
-
+  - Create a dev tunnel.
+    
+        https://learn.microsoft.com/en-us/connectors/custom-connectors/port-tunneling
   
-  Create a dev tunnel:
-  
-  https://learn.microsoft.com/en-us/connectors/custom-connectors/port-tunneling
-
-  
-  Create a Github Apps (use the dev tunnels url and a predefined appName):
-  
-  https://docs.github.com/en/apps/creating-github-app
-  
-
-4. **Configure Your Client**
-
-   Modify the `POST /` endpoint, keep your GitHub token in the `X-Github-Token` header and modify the Copilot chat payload in the request body.
+  - Create a Github Apps. (Use the dev tunnels URL for setting the callback and Copilots URL and use the predefined `appName`.)
+    
+        https://docs.github.com/en/apps/creating-github-app
 
 ## Requirements
 

@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 
 var appName = "szandiCopilotExtensionv1"; 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
 var app = builder.Build();
 
 app.MapGet("/info", () => "Hello Copilot!");
@@ -20,8 +21,7 @@ app.MapPost("/", async ([FromHeader(Name = "X-Github-Token")] string githubToken
     if (githubUserResponse.IsSuccessStatusCode)
     {
         var jsonResponse = await githubUserResponse.Content.ReadAsStringAsync();
-        // Deserialize the JSON response to get the login (username)
-        dynamic user = JsonConvert.DeserializeObject(jsonResponse);
+        dynamic? user = JsonConvert.DeserializeObject(jsonResponse);
         userName = user?.login.ToString();
     }
 

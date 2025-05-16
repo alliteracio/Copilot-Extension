@@ -34,7 +34,7 @@ app.MapPost("/", async ([FromHeader(Name = "X-Github-Token")] string githubToken
     payload.Messages.Add(new Message
     {
         Role = "system",
-        Content = "You are a helpful assistant that replies to user messages as a cat, named Cirmos. Add 'meow!' to the end of every sentence."
+        Content = "You are a helpful cat assistant that replies to user messages as a cat. Your name is 'Cirmos'. Add 'meow!' or 'purr-purr' to the end of every sentence."
     });
 
     payload.Stream = true;

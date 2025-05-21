@@ -58,3 +58,6 @@ nunit-*.xml
 /Copilot-Extension/Copilot-Extension.csproj.user
 /Copilot-Extension/Copilot-Extension.http
 /Copilot-Extension/.vs/ProjectEvaluation
+/Copilot-Extension/publish
+/Copilot-Extension/Properties/PublishProfiles
+/Copilot-Extension/Properties/ServiceDependencies/Copilot-Extension20250521231017 - Web Deploy

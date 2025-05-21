@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 
 var appName = "szandiCopilotExtensionv1"; 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
+
 var app = builder.Build();
 
 app.MapGet("/info", () => "Hello Copilot!");
